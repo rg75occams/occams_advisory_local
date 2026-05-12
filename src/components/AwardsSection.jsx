@@ -33,7 +33,7 @@ const AwardsHonours = () => {
     const loopAwards = [...awards, ...awards, ...awards];
 
     return (
-        <section className="py-12.5 bg-white sm:px-10 px-5">
+        <section className="bg-white sm:px-10 px-5">
             <div className="container mx-auto">
                 <div className="justify-end lg:flex hidden">
                     <Link href="#" className="underline text-[#F36B21] text-xl font-medium">

@@ -163,7 +163,7 @@ function BitcoinCoin() {
     );
 }
 
-export default function BitcoinCoinScene() {
+const BitcoinCoinScene = () => {
     const areaRef = useRef(null);
     const dragRef = useRef({ isDragging: false, startX: 0, startLeft: 0 });
     const [x, setX] = useState(0);
@@ -194,25 +194,16 @@ export default function BitcoinCoinScene() {
     };
 
     return (
-        <section className="relative bg-[#071014]">
-            {/* jitna width doge, utne area ke andar coin x-axis me drag hoga */}
-            <div
-                ref={areaRef}
-                className="relative mx-auto h-40 w-full max-w-150 overflow-hidden touch-none"
-                onMouseMove={onDrag}
-                onMouseUp={stopDrag}
-                onMouseLeave={stopDrag}
-                onTouchMove={onDrag}
-                onTouchEnd={stopDrag}
+        <section className="relative bg-white">
+            <div ref={areaRef} className="relative mx-auto h-40 w-full max-w-150 overflow-hidden touch-none"
+                onMouseMove={onDrag} onMouseUp={stopDrag} onMouseLeave={stopDrag}
+                onTouchMove={onDrag} onTouchEnd={stopDrag}
             >
-                <div
-                    className="absolute left-1/2 top-0 h-40 w-40 cursor-grab active:cursor-grabbing"
+                <div className="absolute left-1/2 top-0 h-40 w-40 cursor-grab active:cursor-grabbing"
                     style={{ transform: `translateX(calc(-50% + ${x}px))` }}
-                    onMouseDown={startDrag}
-                    onTouchStart={startDrag}
+                    onMouseDown={startDrag} onTouchStart={startDrag}
                 >
-                    <Canvas
-                        camera={{ position: [0, 0, 6], fov: 45 }}
+                    <Canvas camera={{ position: [0, 0, 6], fov: 45 }}
                         gl={{ antialias: true, alpha: true }}
                     >
                         <fog attach="fog" args={["#ffae21", 7, 15]} />
@@ -223,12 +214,8 @@ export default function BitcoinCoinScene() {
 
                         <BitcoinCoin />
 
-                        <OrbitControls
-                            enableZoom={false}
-                            enablePan={false}
-                            rotateSpeed={0.8}
-                            dampingFactor={0.08}
-                            enableDamping
+                        <OrbitControls enableZoom={false} enablePan={false}
+                            rotateSpeed={1.5} dampingFactor={0.08} enableDamping
                         />
                     </Canvas>
                 </div>
@@ -236,3 +223,5 @@ export default function BitcoinCoinScene() {
         </section>
     );
 }
+
+export default BitcoinCoinScene
