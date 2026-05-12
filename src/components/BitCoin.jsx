@@ -149,7 +149,7 @@ function BitcoinCoin() {
                 />
             </mesh>
 
-            <mesh rotation={[Math.PI / 2, 0, 0]}>
+            {/* <mesh rotation={[Math.PI / 2, 0, 0]}>
                 <torusGeometry args={[2.16, 0.035, 18, 160]} />
                 <meshStandardMaterial
                     color="#ffe07a"
@@ -158,7 +158,7 @@ function BitcoinCoin() {
                     metalness={1}
                     roughness={0.18}
                 />
-            </mesh>
+            </mesh> */}
         </group>
     );
 }
@@ -168,7 +168,7 @@ const BitcoinCoinScene = () => {
     const dragRef = useRef({ isDragging: false, startX: 0, startLeft: 0 });
     const [x, setX] = useState(0);
 
-    const coinSize = 160;
+    const coinSize = 200;
 
     const startDrag = (e) => {
         const point = e.touches ? e.touches[0] : e;
@@ -194,12 +194,12 @@ const BitcoinCoinScene = () => {
     };
 
     return (
-        <section className="relative bg-white">
-            <div ref={areaRef} className="relative mx-auto h-40 w-full max-w-150 overflow-hidden touch-none"
+        <section className="relative bg-black py-12.5">
+            <div ref={areaRef} className="relative mx-auto h-50 w-full max-w-150 overflow-hidden touch-none"
                 onMouseMove={onDrag} onMouseUp={stopDrag} onMouseLeave={stopDrag}
                 onTouchMove={onDrag} onTouchEnd={stopDrag}
             >
-                <div className="absolute left-1/2 top-0 h-40 w-40 cursor-grab active:cursor-grabbing"
+                <div className="absolute left-1/2 top-0 h-50 w-50 cursor-grab active:cursor-grabbing"
                     style={{ transform: `translateX(calc(-50% + ${x}px))` }}
                     onMouseDown={startDrag} onTouchStart={startDrag}
                 >
