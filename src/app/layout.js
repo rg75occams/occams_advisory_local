@@ -15,7 +15,7 @@ export const metadata = {
         all sizes achieve their financial and operational goals.We offer a range of services, including financial advisory,
         restructuring, tax planning, tax credits, and due diligence.
     `,
-    icons: { icon: "/images/Fevicon.png" },
+    icons: { icon: "./images/Fevicon.png" },
 };
 
 export default function RootLayout({ children }) {
@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <head>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-                <link rel="icon" href="/images/Fevicon.png" />
+                <link rel="icon" href="./images/Fevicon.png" />
             </head>
 
             <body className={`${inter.className} antialiased`}>
-                {/* <link rel="icon" href="/images/Fevicon.png" /> */}
+                {/* <link rel="icon" href="./images/Fevicon.png" /> */}
 
                 <LenisProvider>
                     <Navbar />

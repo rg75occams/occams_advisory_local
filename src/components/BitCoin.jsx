@@ -5,7 +5,7 @@
 // import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 // import { OrbitControls } from "@react-three/drei";
 
-// const bitcoinTexture = "/Images/bitcoin.png";
+// const bitcoinTexture = "./images/bitcoin.png";
 
 // function BitcoinCoin() {
 //     const coinRef = useRef(null);
@@ -107,7 +107,7 @@ import * as THREE from "three";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
-const bitcoinTexture = "/Images/bitcoin.png";
+const bitcoinTexture = "./images/bitcoin.png";
 
 function BitcoinCoin() {
     const coinRef = useRef(null);

@@ -24,12 +24,12 @@ const Home = () => {
 
             {/* <section className="relative h-screen">
                 <div className="absolute inset-0">
-                    <div style={{ backgroundImage: "url(/images/home-banner-desktop.webp)" }}
+                    <div style={{ backgroundImage: "url(./images/home-banner-desktop.webp)" }}
                         className="hidden md:block h-full bg-cover lg:bg-center md:bg-position-[20%] bg-position-[80%]"
                     />
 
                     <div className="block md:hidden h-full w-full bg-cover bg-center"
-                        style={{ backgroundImage: "url(/images/home-banner-mobile.webp)" }}
+                        style={{ backgroundImage: "url(./images/home-banner-mobile.webp)" }}
                     />
                 </div>
 
@@ -62,13 +62,13 @@ const Home = () => {
                                         <Link href="https://open.spotify.com/show/1FCHwR8dWex7l8jHjFqKou?si=0dbe85ff6bdb471b"
                                             target="_blank"
                                         >
-                                            <img src='/images/spotify-banner.svg' alt="Spotify Banner" className={`h-auto 
+                                            <img src='./images/spotify-banner.svg' alt="Spotify Banner" className={`h-auto 
                                                 w-max shrink-0 transition-all duration-300 hover:-translate-y-[1.75px]`}
                                             />
                                         </Link>
 
                                         <Link href="https://youtube.com/@occams_advisory?si=OZVBc-R1Ch04GIT1" target="_blank">
-                                            <img src='/images/you-tube-banner.svg' alt="You Tube Banner" className={`h-auto 
+                                            <img src='./images/you-tube-banner.svg' alt="You Tube Banner" className={`h-auto 
                                                 w-max shrink-0 transition-all duration-300 hover:-translate-y-[1.75px]`}
                                             />
                                         </Link>

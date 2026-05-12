@@ -16,7 +16,7 @@ const Footer = () => {
                     <div className="lg:col-span-4 max-w-60 lg:max-w-100">
                         <Link href='/'>
                             <Image id="logo" className='w-max h-max' width={0} height={0} alt="Occams Podcast"
-                                priority src='/images/occams_advisory.svg'
+                                priority src='./images/occams_advisory.svg'
                             />
                         </Link>
 
@@ -41,7 +41,7 @@ const Footer = () => {
                                 <div className="flex items-center gap-6 text-white lg:justify-evenly">
                                     <Link href="https://youtube.com/@occams_advisory?si=OZVBc-R1Ch04GIT1" target="_blank">
                                         <Image className='w-max' width={0} height={0} alt="Occams Podcast"
-                                            src='/images/you-tube.svg'
+                                            src='./images/you-tube.svg'
                                         />
                                     </Link>
 
@@ -49,7 +49,7 @@ const Footer = () => {
                                         target="_blank"
                                     >
                                         <Image className='w-max' width={0} height={0} alt="Occams Podcast"
-                                            src='/images/spotify.svg'
+                                            src='./images/spotify.svg'
                                         />
                                     </Link>
 

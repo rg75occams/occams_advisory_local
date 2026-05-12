@@ -4,25 +4,25 @@ import Link from "next/link";
 
 const awards = [
     {
-        logo: "/images/inc-5000.svg",
+        logo: "./images/inc-5000.svg",
         title: "INC 5000",
         background: "linear-bg-primary",
         desc: "Fastest Growing US Companies – 2016 to 2021, 2023 and 2024",
     },
     {
-        logo: "/images/fortune.svg",
+        logo: "./images/fortune.svg",
         title: "FORTUNE AMERICA’S",
         background: "linear-bg-secondary",
         desc: "Most Innovative Companies Award list - 2023.",
     },
     {
-        logo: "/images/financial-times.svg",
+        logo: "./images/financial-times.svg",
         title: "Financial Times",
         background: "linear-bg-primary",
         desc: "The America’s Fastest-Growing Companies - 2020 to 2023, 2025",
     },
     {
-        logo: "/images/fortune.svg",
+        logo: "./images/fortune.svg",
         title: "FORTUNE AMERICA’S",
         background: "linear-bg-secondary",
         desc: "Most Innovative Companies Award list - 2023.",
@@ -43,8 +43,8 @@ const AwardsHonours = () => {
 
                 <div className="grid grid-cols-12 items-center lg:gap-10 gap-6 lg:mt-10 mt-0">
                     <div className="lg:col-span-3 col-span-12 mx-auto">
-                        <img src="/images/awards-honours.svg" alt="Awards & Honours" className="lg:flex hidden" />
-                        <img src="/images/awards-honours-md.svg" alt="Awards & Honours" className="lg:hidden flex" />
+                        <img src="./images/awards-honours.svg" alt="Awards & Honours" className="lg:flex hidden" />
+                        <img src="./images/awards-honours-md.svg" alt="Awards & Honours" className="lg:hidden flex" />
                     </div>
 
                     <div className="lg:col-span-9 col-span-12 relative overflow-hidden lg:mt-0 mt-10">

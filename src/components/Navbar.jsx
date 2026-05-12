@@ -61,7 +61,7 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 mt-7.5 sm:px-10 px-5">
             <div className='container mx-auto flex justify-between items-center'>
                 <Link href='/'>
-                    <img src='/images/occams_advisory.svg' alt='occams Advisory' className="w-max h-max" />
+                    <img src='./images/occams_advisory.svg' alt='occams Advisory' className="w-max h-max" />
                 </Link>
 
                 <div className={`xl:flex items-center md:text-base text-base hidden h-19.5 pr-4 pl-2.5 py-2.5
@@ -70,7 +70,7 @@ const Navbar = () => {
                     <Link href="/" className={`flex items-center rounded-[50px] justify-center py-4 shrink-0 transition-all 
                         px-8 duration-300 ${isActive("/") ? "linear-background text-white" : "hover:bg-white/10"}`}
                     >
-                        <img src='/icons/home_icon.svg' alt='Home Icon' />
+                        <img src='./icons/home_icon.svg' alt='Home Icon' />
                     </Link>
 
                     {nav_menu?.map((nav, index) => {
@@ -116,7 +116,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="xl:flex hidden xl:gap-7.5 md:gap-5 gap-8 items-center" data-aos="fade-right">
-                    <img src='/icons/search_icon.svg' alt='Search Icon' className="w-max h-max" />
+                    <img src='./icons/search_icon.svg' alt='Search Icon' className="w-max h-max" />
 
                     <button className={`group inline-flex flex-nowrap items-center rounded-full text-base py-2.5 w-37.5
                         h-11.5 justify-center whitespace-nowrap gap-2.5 btn-professional bg-[#F36B21] text-white 
@@ -133,11 +133,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="xl:hidden flex sm:gap-8 gap-7 items-center">
-                    <img src='/icons/search_icon.svg' alt='Search Icon' className="w-max h-max" />
+                    <img src='./icons/search_icon.svg' alt='Search Icon' className="w-max h-max" />
 
                     <button className="cursor-pointer text-4xl" onClick={toggleMenu}>
                         {isMenuOpen ? <i className="fa-solid fa-xmark"></i> : (
-                            <img src='/icons/toggle-bar.svg' alt='Toggle Bar' />
+                            <img src='./icons/toggle-bar.svg' alt='Toggle Bar' />
                         )}
                     </button>
                 </div>

@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Banner = () => {
     return (
-        // <section style={{ backgroundImage: `url(/assets/home_banner.svg)` }} className='h-screen bg-cover 
+        // <section style={{ backgroundImage: `url(./assets/home_banner.svg)` }} className='h-screen bg-cover 
         //     bg-no-repeat bg-center sm:px-10 px-5 flex items-center'
         // >
         //     <div className='container mx-auto'>
@@ -17,7 +17,7 @@ const Banner = () => {
         //                         <p className='sm:text-lg text-sm font-normal'>Now accepting new patients in California.</p>
         //                         <GoArrowUpRight className='sm:text-lg text-sm sm:mt-1.5 mt-1 font-normal' />
 
-        //                         {/* <img src={'/assets/mindclaire_cta.png'} alt='mindclaire_cta'
+        //                         {/* <img src={'./assets/mindclaire_cta.png'} alt='mindclaire_cta'
         //                             className="w-auto mt-6"
         //                         /> */}
         //                     </Link>
@@ -39,7 +39,7 @@ const Banner = () => {
             <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full z-0
                 object-cover object-[80%] sm:object-right sm:object-fill rotate-180"
             >
-                <source src="/videos/occams_advisory_hero.mp4" type="video/mp4" />
+                <source src="./videos/occams_advisory_hero.mp4" type="video/mp4" />
             </video>
 
             <div className="relative w-full h-screen sm:px-10 px-5 flex items-center">
@@ -81,15 +81,15 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div className="absolute md:bottom-20 sm:bottom-10 bottom-7 flex w-full justify-center z-20 opacity-40">
-                <img src="/assets/scroll_down.gif" alt="scroll down" className='w-12.5' />
-            </div>
+            {/* <div className="absolute md:bottom-20 sm:bottom-10 bottom-7 flex w-full justify-center z-20 opacity-40">
+                <img src="./assets/scroll_down.gif" alt="scroll down" className='w-12.5' />
+            </div> */}
         </section>
 
         // <section className="relative h-screen w-full overflow-hidden">
         //     {/* Background Image layer */}
         //     <img
-        //         src="/assets/home_banner.svg"
+        //         src="./assets/home_banner.svg"
         //         alt="bg"
         //         className="absolute w-full h-full object-cover z-0"
         //     />
@@ -104,7 +104,7 @@ const Banner = () => {
         //   object-[80%] sm:object-right
         //   mix-blend-multiply"
         //     >
-        //         <source src="/assets/videos/occams_ai_hero.mp4" type="video/mp4" />
+        //         <source src="./assets/videos/occams_ai_hero.mp4" type="video/mp4" />
         //     </video>
 
         //     {/* Content */}
@@ -114,7 +114,7 @@ const Banner = () => {
 
         //     {/* Scroll */}
         //     <div className="absolute md:bottom-20 sm:bottom-10 bottom-7 w-full flex justify-center z-20 opacity-40">
-        //         <img src="/assets/scroll_down.gif" alt="scroll down" className="w-12.5" />
+        //         <img src="./assets/scroll_down.gif" alt="scroll down" className="w-12.5" />
         //     </div>
         // </section>
     )

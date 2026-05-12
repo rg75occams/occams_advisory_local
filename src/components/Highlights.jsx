@@ -68,7 +68,7 @@ const Highlights = () => {
                                 lg:pl-4.5 xl:pr-10.75 pl-6.5 pr-6.5 lg:py-6 py-5 rounded-full h-90"
                             >
                                 <div className="flex flex-col lg:flex-row xl:gap-5 lg:gap-4 gap-2 items-center">
-                                    <img src="/images/podcast-gif.gif" alt="Podcast Gif" className="xl:h-auto h-25 shrink-0" />
+                                    <img src="./images/podcast-gif.gif" alt="Podcast Gif" className="xl:h-auto h-25 shrink-0" />
 
                                     <div className="flex flex-col">
                                         <h5 className="xl:text-xl text-lg font-bold text-white">
@@ -112,7 +112,7 @@ const Highlights = () => {
                             pl-4.5 pr-10.75 py-6 rounded-full"
                         >
                             <div className="flex gap-5 items-center">
-                                <img src="/images/podcast-gif.gif" alt="Podcast Gif" className="shrink-0" />
+                                <img src="./images/podcast-gif.gif" alt="Podcast Gif" className="shrink-0" />
 
                                 <div className="flex flex-col">
                                     <h5 className="lg:text-xl text-lg font-bold text-white">
