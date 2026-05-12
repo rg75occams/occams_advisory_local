@@ -1,26 +1,237 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Font Guidelines Starts*/
+.heading-1 {
+    font-size: clamp(2.375rem, 1.8rem + 2.5vw, 4.375rem);
+    line-height: clamp(3rem, 2.4rem + 2.8vw, 5.25rem);
+    font-weight: 600;
+    font-family: inter;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.heading-2 {
+    font-size: clamp(1.25rem, 1rem + 2.2vw, 3.75rem);
+    line-height: clamp(1.75rem, 1.4rem + 2.4vw, 4.625rem);
+    font-weight: 500;
+    font-family: inter;
 }
+
+.heading-3 {
+    font-size: 3.25rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+    font-family: inter;
+}
+
+.heading-4 {
+    font-size: clamp(1.25rem, 1.05rem + 1.2vw, 2.5rem);
+    line-height: clamp(1.75rem, 1.5rem + 1.4vw, 3.75rem);
+    font-weight: 500;
+    font-family: inter;
+}
+
+.heading-5 {
+    font-size: clamp(1.375rem, 1.2rem + 0.6vw, 2rem);
+    line-height: clamp(1.75rem, 1.6rem + 0.8vw, 2.5rem);
+    font-weight: 600;
+    font-family: inter;
+}
+
+.heading-6 {
+    font-size: clamp(1rem, 0.95rem + 0.3vw, 1.375rem);
+    line-height: clamp(1.5rem, 1.4rem + 0.4vw, 1.875rem);
+    font-weight: 400;
+    font-family: inter;
+}
+
+.subhead-1,
+.subhead-2 {
+    font-size: clamp(1rem, 0.95rem + 0.4vw, 2rem);
+    line-height: clamp(1.5rem, 1.4rem + 0.6vw, 2.875rem);
+    font-family: inter;
+}
+
+.subhead-1 {
+    font-weight: 600;
+}
+
+.subhead-2 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.body-1 {
+    font-size: clamp(1rem, 0.95rem + 0.4vw, 1.25rem);
+    line-height: clamp(1.5rem, 1.4rem + 0.5vw, 2.125rem);
+    font-weight: 400;
+    font-family: inter;
+}
+
+.body-2 {
+    font-size: clamp(0.875rem, 0.85rem + 0.2vw, 1.125rem);
+    line-height: clamp(1.25rem, 1.2rem + 0.3vw, 1.875rem);
+    font-family: inter;
+}
+
+.body-3 {
+    font-size: clamp(0.875rem, 0.85rem + 0.2vw, 1rem);
+    line-height: clamp(1.25rem, 1.2rem + 0.3vw, 1.5rem);
+    font-family: inter;
+}
+
+.caption-1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.caption-2 {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+.cta-1 {
+    font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+    font-weight: 600;
+    font-family: inter;
+}
+
+.cta-2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: inter;
+}
+
+/* Font Guidelines Ends*/
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+@media (min-width: 96rem) {
+    .container {
+        max-width: 85rem !important;
+    }
+}
+
+.spacing {
+    padding: 50px 0px;
+}
+
+.linear-background {
+    background: linear-gradient(124.07deg, #EF6A24 19.79%, #F99D3C 88.53%);
+}
+
+.linear-background-secondary {
+    background: linear-gradient(137.3deg, #FFA169 12.56%, #F16A1A 104.12%);
+}
+
+.linear-bg-primary {
+    background: radial-gradient(91.5% 69.17% at 100% 69.17%, #CDEFFF 0%, #FBFBFB 100%);
+}
+
+.linear-bg-secondary {
+    background: radial-gradient(97.86% 73.98% at 100% 26.02%, #FFDDCC 0%, #FBFBFB 100%);
+}
+
+.linear-line-color {
+   background: linear-gradient(270deg, #FFFFFF 0%, #CACACA 48.08%, #FFFFFF 100%);
+}
+
+.btn-professional {
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 260ms ease, box-shadow 260ms ease, filter 260ms ease;
+}
+
+.btn-professional::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.3) 50%, transparent 80%);
+    transform: translateX(-130%);
+    transition: transform 420ms ease;
+    pointer-events: none;
+}
+
+.btn-professional:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.02);
+    box-shadow: 0 10px 24px rgba(243, 107, 33, 0.3);
+}
+
+.btn-professional:hover::after {
+    transform: translateX(130%);
+}
+
+.btn-professional:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 14px rgba(243, 107, 33, 0.22);
+}
+
+.btn-professional:focus-visible {
+    outline: 2px solid #F36B21;
+    outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E4E4E7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(124.07deg, #EF6A24 19.79%, #F99D3C 88.53%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(124.07deg, #EF6A24 19.79%, #F99D3C 88.53%);
+}
+
+/* Marquee Animation */
+.marquee {
+    animation: marquee 10s linear infinite;
+}
+
+.marquee-mask {
+    mask-image: linear-gradient( to right, #00000000 0%, #000000 15%);
+}
+
+.marquee:hover:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
