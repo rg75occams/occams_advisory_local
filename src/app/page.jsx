@@ -306,6 +306,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BitCoin from "@/components/BitCoin";
 import BitCoin1 from "@/components/BitCoin1";
+import { VideoText } from "@/components/ui/video-text";
 
 const Home = () => {
     const root = useRef(null);
@@ -374,6 +375,16 @@ const Home = () => {
     return (
         <Fragment>
             <Banner />
+
+            <section className="sm:px-10 px-5 pt-12.5">
+                <div className='container mx-auto'>
+                    <div className="relative h-40 w-full overflow-hidden">
+                        <VideoText src="./videos/occams_advisory_hero.mp4">
+                            Occams Advisory
+                        </VideoText>
+                    </div>
+                </div>
+            </section>
 
             <div className="spacing">
                 <AwardsSection />
