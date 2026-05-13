@@ -46,7 +46,10 @@ function BitCoin1() {
 
 const BitcoinCoinScene = () => {
     return (
-        <section className="relative bg-[#071014] py-12.5">
+        // <section className="relative bg-[#071014] py-12.5 rounded-4xl">
+        <section className="relative bg-[#071014] py-12.5 rounded-4xl overflow-hidden bg-contain bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('./images/bitcoin-bg-1.png')", }}
+        >
             <div className="mx-auto w-50 h-50">
                 <Canvas camera={{ position: [0, 0, 6], fov: 45 }}
                     gl={{ antialias: true, alpha: true }}
@@ -59,12 +62,8 @@ const BitcoinCoinScene = () => {
 
                     <BitCoin1 />
 
-                    <OrbitControls
-                        enableZoom={false}
-                        enablePan={false}
-                        rotateSpeed={0.8}
-                        dampingFactor={0.08}
-                        enableDamping
+                    <OrbitControls enableZoom={false} enablePan={false}
+                        rotateSpeed={0.8} dampingFactor={0.08} enableDamping
                     />
                 </Canvas>
             </div>

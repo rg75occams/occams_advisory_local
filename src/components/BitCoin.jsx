@@ -194,7 +194,10 @@ const BitcoinCoinScene = () => {
     };
 
     return (
-        <section className="relative bg-black py-12.5">
+        // <section className="relative bg-black py-12.5 rounded-4xl">
+        <section className="relative bg-[#071014] py-12.5 rounded-4xl overflow-hidden bg-contain bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('./images/bitcoin-bg.png')", }}
+        >
             <div ref={areaRef} className="relative mx-auto h-50 w-full max-w-150 overflow-hidden touch-none"
                 onMouseMove={onDrag} onMouseUp={stopDrag} onMouseLeave={stopDrag}
                 onTouchMove={onDrag} onTouchEnd={stopDrag}
